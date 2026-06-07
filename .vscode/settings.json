@@ -10,20 +10,10 @@
     "reportMissingImports": "none",
     "reportMissingModuleSource": "none"
   },
-  "// 설명3": "학생 탐색기에서 강사/내부/노이즈 파일을 숨깁니다(파일은 repo에 그대로 있고 보기만 숨김). 다시 보려면 이 항목을 false 로.",
+  "// 설명3": "파이썬 캐시/임시 파일만 숨깁니다. 내용 파일은 모두 보입니다(혼란 방지).",
   "files.exclude": {
     "**/__pycache__": true,
     "**/*.pyc": true,
-    "**/.pytest_cache": true,
-    ".devcontainer": true,
-    ".gitignore": true,
-    ".env.example": true,
-    "dashboard_lib.py": true,
-    "memory": true,
-    "prompts": true,
-    "docs/slides": true,
-    "docs/diagrams": true,
-    "docs/lightweight_codespaces_exercises.md": true,
-    "course/AGENT_TRACK.md": true
+    "**/.pytest_cache": true
   }
 }
