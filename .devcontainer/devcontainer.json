@@ -1,10 +1,8 @@
 {
-  "name": "Security Agent Lab",
+  "name": "Security Agent Lab — Day 5",
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
-  "postCreateCommand": "pip install -r requirements.txt && cp -n .env.example .env || true",
-  "postAttachCommand": "python check_env.py || true",
-  "customizations": {
-    "vscode": { "extensions": ["ms-python.python", "ms-python.vscode-pylance"] }
-  },
+  "postCreateCommand": "pip install -r requirements.txt",
+  "postAttachCommand": "echo '준비 완료 — 터미널에 streamlit run app.py 입력'",
+  "customizations": { "vscode": { "extensions": ["ms-python.python", "ms-python.vscode-pylance"] } },
   "remoteEnv": { "PYTHONPATH": "${containerWorkspaceFolder}" }
 }

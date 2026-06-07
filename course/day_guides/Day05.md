@@ -1,5 +1,11 @@
 # Day 5 — Integrated Security PoC · 최종 리뷰
 
+> ⚠️ **이 가이드는 전체 모노레포(security-agent-lab) 기준 CLI 실습 설명입니다.**
+> 단독 Day 저장소에서는 README의 `streamlit run app.py`(버튼 클릭 실습)만 쓰면 됩니다.
+> `check_env.py`·`scripts/`·`orchestrator/`·`mcp_servers/` 는 모노레포에만 있습니다(이 저장소에는 없음).
+> `agents/`·`course/mini_labs/`·`policies/`·`sample_app/` 명령은 이 저장소에서도 그대로 동작합니다.
+
+
 ## 오늘의 목표
 - Day 1~4 의 정책 · 도구(MCP) · 역할 분리(HITL) · 위험도 점수화를 하나로 통합한다.
 - 통합 PoC 결과를 우리 부서 도입 계획(Adoption Canvas)으로 정리한다.
