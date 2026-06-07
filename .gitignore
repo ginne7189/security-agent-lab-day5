@@ -12,3 +12,4 @@ course/**/reports/
 
 # build_day_repo.py 가 만드는 Day별 슬림 저장소(결과물)
 build/
+.DS_Store
