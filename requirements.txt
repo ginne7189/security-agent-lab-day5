@@ -1,0 +1,5 @@
+streamlit>=1.49.0
+python-dotenv>=1.0.0
+# LLM 해석 레이어(선택) — 키 없으면 결정론적 fallback 으로 동작
+anthropic>=0.40.0
+openai>=1.50.0
