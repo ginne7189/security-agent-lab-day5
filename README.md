@@ -20,3 +20,4 @@ streamlit run app.py
 
 ## 자세한 가이드
 - `course/day_guides/Day05.md`
+
