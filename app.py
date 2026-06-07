@@ -1,15 +1,9 @@
-import os, sys
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import streamlit as st
 import dashboard_lib as L
 
-st.set_page_config(page_title="Day 5 · 통합", page_icon="5️⃣", layout="wide")
-st.title("5️⃣ Day 5 · 통합")
+st.set_page_config(page_title="Day 5 · 통합 · 현업 적용", page_icon="5\ufe0f\u20e3", layout="wide")
+st.title("\U0001f6e1\ufe0f Day 5 · 통합 · 현업 적용")
+st.caption("\ud0a4\u00b7\ud1a0\ud070 \uc5c6\uc774 \ub3d9\uc791 \u00b7 \uc678\ubd80 API \ud638\ucd9c \uc5c6\uc74c")
 
-tabs = st.tabs(["🏠 개요", "🤔 왜 만드나?", "Day 5"])
-with tabs[0]:
-    L.render_overview()
-with tabs[1]:
-    L.render_why()
-with tabs[2]:
-    L.render_day5()
+L.render_overview()
+L.render_day5()

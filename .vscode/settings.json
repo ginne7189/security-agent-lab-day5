@@ -1,0 +1,29 @@
+{
+  "// 설명": "Codespaces 에서 VS Code 가 sample_app/requirements.txt(점검 전용·취약/충돌 버전)까지 끌어와 가상환경을 만들려다 실패하는 것을 막습니다. 본 실습은 devcontainer 가 설치해 둔 시스템 Python(3.12)을 그대로 사용합니다.",
+  "python.defaultInterpreterPath": "/usr/local/bin/python",
+  "python.createEnvironment.contentButton": "hide",
+  "python.terminal.activateEnvironment": false,
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["tests"],
+  "// 설명2": "선택 패키지(streamlit/anthropic 등)가 아직 설치 전이어도 학생 화면에 import 경고 빨간줄이 안 뜨게 숨깁니다(실행에는 영향 없음).",
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "none",
+    "reportMissingModuleSource": "none"
+  },
+  "// 설명3": "학생 탐색기에서 강사/내부/노이즈 파일을 숨깁니다(파일은 repo에 그대로 있고 보기만 숨김). 다시 보려면 이 항목을 false 로.",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.pytest_cache": true,
+    ".devcontainer": true,
+    ".gitignore": true,
+    ".env.example": true,
+    "dashboard_lib.py": true,
+    "memory": true,
+    "prompts": true,
+    "docs/slides": true,
+    "docs/diagrams": true,
+    "docs/lightweight_codespaces_exercises.md": true,
+    "course/AGENT_TRACK.md": true
+  }
+}

@@ -1,10 +1,14 @@
 .env
 __pycache__/
 *.pyc
-.pytest_cache/
-.venv/
 reports/*.md
 reports/*.json
 !reports/.gitkeep
 memory/audit_log.jsonl
+.venv/
+
+# 강의 미니랩 생성물(수강생이 로컬에서 생성)
 course/**/reports/
+
+# build_day_repo.py 가 만드는 Day별 슬림 저장소(결과물)
+build/
